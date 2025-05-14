@@ -366,8 +366,7 @@ city3 = "Houston"</code>
     </pre>
     <div class="answer mb-4">
       <label class="block font-medium text-gray-700 mb-1">✍️ Your answer:</label>
-      <textarea class="w-full p-3 border border-gray-300 rounded" rows="3">
-        Someone may do this instead of using a list to improve the clariy and readability of the code, having a variable represent one specific item makes the code easier to understand. 
+      <textarea class="w-full p-3 border border-gray-300 rounded" rows="3">Someone may do this instead of using a list to improve the clariy and readability of the code, having a variable represent one specific item makes the code easier to understand. 
       </textarea>
     </div>
   </div>
@@ -380,8 +379,8 @@ city3 = "Houston"</code>
       <li>Use <code>insert()</code> to place <code>"Little Rock"</code> before <code>"Sacramento"</code>. Rerun the code.</li>
       <li>What is the object and method in <code>capitals.append("Sacramento")</code>?
         <ul class="list-disc list-inside ml-4">
-          <li>Object: <span class="font-semibold text-gray-600">______</span></li>
-          <li>Method: <span class="font-semibold text-gray-600">______</span></li>
+          <li>Object: <span class="font-semibold text-gray-600">capitals</span></li>
+          <li>Method: <span class="font-semibold text-gray-600">.append</span></li>
         </ul>
       </li>
       <li>Save the file as <code>126-list_operations-completed.py</code>.</li>
@@ -394,8 +393,8 @@ city3 = "Houston"</code>
       <li>Why does <code>"Little Rock"</code> appear twice when you run the program?</li>
       <li>What are two ways you could fix this?
         <ul class="list-disc list-inside ml-4">
-          <li>a. <span class="font-semibold text-gray-600">______</span></li>
-          <li>b. <span class="font-semibold text-gray-600">______</span></li>
+          <li>a. <span class="font-semibold text-gray-600">Use .remove to remove one instance of 'Little Rock'</span></li>
+          <li>b. <span class="font-semibold text-gray-600">Use .pop to remove once instance and return its value. </span></li>
         </ul>
       </li>
     </ol>
@@ -406,8 +405,18 @@ city3 = "Houston"</code>
     <ol class="list-decimal list-inside text-gray-800 space-y-2">
       <li>Open <code>126-analyze.py</code>.</li>
       <li>What will the <code>print()</code> statement on line 2 output?</li>
+      <textarea class="w-full p-3 border border-gray-300 rounded">Output: quick</textarea>
       <li>What kind of data structure is used on line 4?</li>
+      <textarea class="w-full p-3 border border-gray-300 rounded">A tuple</textarea>
       <li>How would you change the <code>coins</code> list to use <code>"bronze"</code> instead of <code>"platinum"</code>?</li>
+      <textarea class="w-full p-3 border border-gray-300 rounded">
+        # You cannot directly change items in a tuple because it is immutable, but this code achieves something similar: 
+        coins = ('Platinum','Gold','Silver') 
+        coins_list = list(coins)
+        coins_list[0] = "Bronze" 
+        coins2 = tuple(coins_list)
+        print(coins2)
+      </textarea>
     </ol>
   </div>
 
